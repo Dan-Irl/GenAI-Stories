@@ -1,0 +1,20 @@
+{
+    "story_meta_description": "Short general description of the story world", 
+    "characters": [
+      {
+        "name": "'name",
+        "description": "Text-To_Image descriptive promt of traits"
+      }
+    ],
+    "scenes": [
+      {
+        "description": "Text_To-Image description promt",
+        "dialogue": [
+          {
+            "character": "name",
+            "dialogue": "Dialog"
+          }
+        ]
+      }
+    ]
+  }
