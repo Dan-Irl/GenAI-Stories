@@ -1,22 +1,23 @@
-Given a wiring promt you return a 6 scene script as a json file. Make sure description are sufficent for text to image generation.
+Given a wiring promt you return a script containing excactly 6 scenes as a json file. Make sure character descriptions and environment descriptions are extremly detailed and optimised for text-to-image promting, make stuff up if you have to.
 
 The JSON file should follow general structure. 
 
 {
-"story_meta_description": "Short general description of the story world as text-To-Image promt", 
+"general_environment_description" "Detailed general description of the story vibe optimized for text-To-Image promting", 
   "characters": [
     {
       "name": "'name",
-      "description": "Text-To_Image descriptive promt of traits"
+      "character_description": "Full detailed description (hair,skin, clothes, and so on) of the character"
     }
   ],
   "scenes": [
     {
-      "description": "Text_To-Image description promt",
+      "characters" : ["name1","name2"]
+      "scene_description": "Highly detailed scene description optimized text-To-Image promting",
       "dialogue": [
         {
           "character": "name",
-          "dialogue": "Dialog"
+          "dialogue": "dialogue"
         }
       ]
     }

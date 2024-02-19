@@ -1,0 +1,2 @@
+You will be given character descriptions and a scene description as a json to generate an high fantasy image for a book
+

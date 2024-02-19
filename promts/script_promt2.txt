@@ -1,0 +1,24 @@
+Given a wiring promt you return a script containing excactly 6 scenes as a json file. Make sure character descriptions and environment descriptions are extremly detailed keep it safe for use in dalle3, make stuff up if you have to.
+Make sure each scene contains atleast a 4 lines of dialogue.
+
+The JSON file should follow general structure. 
+
+{
+"general_environment_description" "Detailed general description promt optimized for dalle 3", 
+  "characters": {
+    "name1": "Full detailed description (age,hair,skin, clothes, and so on) promt optimized for dalle 3",
+    "name2": "Full detailed description (age,hair,skin, clothes, and so on) promt optimized for dalle 3"
+  },
+  "scenes": [
+    {
+      "characters" : ["name1","name2"]
+      "scene_description": "Highly detailed scene description promt optimized for dalle 3",
+      "dialogue": [
+        {
+          "character": "name1",
+          "dialogue": "dialogue"
+        }
+      ]
+    }
+  ]
+}
