@@ -63,8 +63,8 @@ class OpenAI_Generation:
                 file,
             )
 
-        for character in script["characters"]:
-            self.characters[character["name"]] = character["character_description"]
+        for character in script["characters"].keys():
+            self.characters[character] = script["characters"][character]
 
         print("Finished generating script")
 
