@@ -2,7 +2,10 @@ import os, random
 import json
 from openai import OpenAI
 from pathlib import Path
-from classes.support_functions import change_pitch_without_affecting_speed
+from classes.support_functions import (
+    change_pitch_without_affecting_speed,
+    download_images,
+)
 
 
 class OpenAI_Generation:
@@ -99,12 +102,8 @@ class OpenAI_Generation:
 
             self.images_url.append(response.data[0].url)
 
-        # save the image url as a json file
-        with open("data/stories/generated_images.json", "w", encoding="utf-8") as file:
-            json.dump(
-                self.images_url,
-                file,
-            )
+        # save the image urls to a image files
+        download_images(self.images_url, "data/stories")
 
     def generate_audio(self):
         i = 0
